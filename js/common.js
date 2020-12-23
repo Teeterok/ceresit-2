@@ -111,6 +111,7 @@ $(document).ready(function() {
 	// });
 
 
+	$(".fancybox").fancybox();
 
 	// mask-input 
 	$(".input-phone").mask("+7 (999) 999-99-99");
@@ -189,13 +190,13 @@ $(document).ready(function() {
 	});
 
 
-	$('.tabs li a').click(function(event) {
+	$(".tabs li a").click(function(event) {
 		event.preventDefault();
-		$(this).parent().parent().find("li").removeClass('active');
+		$(".tabs li").removeClass('active');
 		$(this).parent().addClass('active');
-		$(this).parent().parent().siblings(".tabs-container").find(".tab-pane").fadeOut(0);
+		$(".tab-pane").removeClass("active");
 		var selectTab = $(this).attr("href");
-		$(selectTab).fadeIn(200);
+		$(selectTab).addClass("active");
 	});
 
 
