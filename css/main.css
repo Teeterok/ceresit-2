@@ -701,13 +701,12 @@ input[type=number]
 }
 
 .works-slider {
-	position: relative;
+	
 	
 }
 
 .works-slider-item {
 	margin-right: 30px;
-	position: relative;
 	width: 945px;
 	height: 540px;
 }
@@ -739,6 +738,7 @@ input[type=number]
 }
 
 .slick-slide.slick-current{
+	position: relative;
 	opacity: 1;
 	transition: .5s all;
 }
@@ -754,6 +754,7 @@ input[type=number]
 }
 
 .works-slider .slick-arrow {
+	position: absolute;
 	width: 36px;
 	height: 36px;
 	background-color: #f7f6f5;
@@ -1341,7 +1342,55 @@ table {
 	background-color: rgb(177, 170, 170);
 }
 
+.modal-block {
+	display: none;
+}
+.modal-block .block-form {
+	max-width: 449px;
+	margin: 0 auto;
+	width: 100%;
+}
+.fancybox-skin {
+	padding: 0 !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+.modal-block .main-form {
+	box-shadow: none;
+}
+.fancybox-close {
+    top: 15px;
+    right: 25px;
+    width: 15px;
+    height: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    background: none !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    transform: rotate(44deg);
+    color: #0398d3;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 200;
+    font-size: 24px;
+}
+.fancybox-close:before {
+    content: "\f067";
+}
 
-
-
+.modal-block .form-title {
+	font-size: 30px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #000000;
+	text-align: center;
+}
 
